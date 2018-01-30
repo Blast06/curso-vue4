@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso vue 4</title>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="../../applications/notemaster/css/vue.css">
+
+</head>
+
+<body>
+<div id="app">
+
+    <div v-bind:title="randNum">Hover over me to change me</div>
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data:{
+            randNum: Math.floor(Math.random() * 50) + 1
+        }
+    })
+
+</script>
+
+</body>
+
+</html>

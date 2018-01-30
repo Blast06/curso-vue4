@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso vue 4</title>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="../../applications/notemaster/css/vue.css">
+
+</head>
+
+<body>
+<div id="app">
+    <span>Cambia el texto</span>
+    <input v-model="text" placeholder="text.."/>
+
+    <h2>Aqui el texto en minuscula</h2>
+    <div>{{lowerText}}</div>
+
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            text: ''
+        },
+        computed:{
+            lowerText(){
+                return this.text.toLowerCase()
+            }
+        }
+
+
+    })
+
+</script>
+
+</body>
+
+</html>

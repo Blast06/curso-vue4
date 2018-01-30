@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso vue 4</title>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="../../applications/notemaster/css/vue.css">
+
+</head>
+
+<body>
+<div id="app">
+    <ul>
+        <li v-for="color in colors" v-if="color.primary">{{color.text}}</li>
+    </ul>
+
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            colors:[
+            {
+                text: 'rojo',
+                primary: true},
+
+            {
+                text: 'negro',
+                primary: false
+                
+            },
+            {
+                text: 'azul',
+                primary: false
+            },
+            {
+                text: 'amarillo',
+                primary: true
+            },
+            {
+                text: 'verde',
+                primary: true
+            },
+            'rojo', 'negro', 'azul', 'amarillo', 'verde']
+    }
+    })
+
+</script>
+
+</body>
+
+</html>
