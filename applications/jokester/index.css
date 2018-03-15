@@ -1,0 +1,35 @@
+#app {
+    font: 1em 'Avenir;
+    -webkit-font-smoothing antialiased;
+    color: #FF8264;
+    margin-top: 65px;
+    font-style: oblique;
+    
+    
+    
+}
+h3{
+    font-family: 'Sofia';
+    font-size: 22px;
+    color: #F2F2F2;
+}
+
+body{
+    background: #393939;
+}
+
+.component{
+    text-align: center;
+}
+
+
+
+
+.joke-card{
+    border: 2px solid #0278AE;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 5px;
+    background: #F2F2F2;
+}
+
